@@ -57,6 +57,12 @@ nav > a:hover {
     color: #05fc09;
 }
 
+.rod{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
 .rod > a > img {
     width: 30px;
     
