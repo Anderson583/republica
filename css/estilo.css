@@ -71,6 +71,23 @@ nav > a:hover {
 picture {
     cursor: default;
 }
+
+h2 {
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 5rem;
+    color: ghostwhite;
+     
+}
+
+button {
+    font-size: 1.5rem;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
     
 
     
