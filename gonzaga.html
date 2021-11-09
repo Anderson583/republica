@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- Testando criação de sites com HTML5 e CSS3 (Anderson Quirino)-->
+  <!-- Testando criação de sites com HTML5 e CSS3 (Anderson Quirino)-->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
     <title>Anderson Quirino</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <div>
-            <h1>Confira os homenageados</h1>
-        </div>
-        <nav>
-            <a href="index.html">Homer Simpson</a>
-            <a href="rossi.html">Reginaldo Rossi</a>
-            <a href="madruga.html">Seu Madruga</a>
-            <a href="gonzaga.html">Luiz Gonzaga</a>
-        </nav>
+      <div>
+        <h1>Confira os homenageados</h1>
+      </div>
+      <nav>
+        <a href="index.html">Homer Simpson</a>
+        <a href="rossi.html">Reginaldo Rossi</a>
+        <a href="madruga.html">Seu Madruga</a>
+        <a href="gonzaga.html">Luiz Gonzaga</a>
+      </nav>
     </main>
     <a href="gonzaga.html">
-        <picture style="cursor:default">
-            <source media="(max-width: 547px )" srcset="imagens/gonzaga-p.png">
-            <img src="imagens/gonzaga-g.png" alt="logo Luiz Gonzaga, da república dos vagabundos">
-        </picture>
+      <picture style="cursor: default">
+        <source media="(max-width: 547px )" srcset="imagens/gonzaga-p.png" />
+        <img
+          src="imagens/gonzaga-g.png"
+          alt="logo Luiz Gonzaga, da república dos vagabundos"
+        />
+      </picture>
     </a>
     <h2 id="d"></h2>
     <button onclick="sortear()"><strong>Seu Número da Sorte</strong></button>
     <script>
-        function sortear() {
-    var numeros = 9999
-    var sorteio = Math.round(Math.random() * numeros)
-    document.getElementById("d").innerHTML = sorteio
-    }
+      function sortear() {
+        var numeros = 9999;
+        var sorteio = Math.round(Math.random() * numeros);
+        document.getElementById("d").innerHTML = sorteio;
+      }
     </script>
     <footer class="rod">
-        <a href="https://www.instagram.com/republica_dos_vagabundos/" target="_blank" ><img src="imagens/instagram.png" alt="instagram"></a>
-        <a href="https://www.youtube.com/channel/UCN6zmcZH7yqOSlFBN4CbMvg" target="_blank" ><img src="imagens/youtube.png" alt="youtube"></a>
+      <a
+        href="https://www.instagram.com/republica_dos_vagabundos/"
+        target="_blank"
+        ><img src="imagens/instagram.png" alt="instagram"
+      /></a>
+      <a
+        href="https://www.youtube.com/channel/UCN6zmcZH7yqOSlFBN4CbMvg"
+        target="_blank"
+        ><img src="imagens/youtube.png" alt="youtube"
+      /></a>
     </footer>
-
 
     <!--
     <form action="email" method="post"></form>
@@ -50,7 +60,5 @@
      <input type="password" name="senha" id="senha">
      <input type="button" value="enviar"> 
      -->
-
-</body>
-
+  </body>
 </html>
