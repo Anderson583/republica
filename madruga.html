@@ -29,7 +29,15 @@
             <img src="imagens/madruga1.png" alt="logo Seu Madruga, da república dos vagabundos">
         </picture>
     </a>
-
+    <h2 id="d"></h2>
+    <button onclick="sortear()"><strong>Seu Número da Sorte</strong></button>
+    <script>
+        function sortear() {
+    var numeros = 9999;
+    var sorteio = Math.round(Math.random() * numeros);
+    document.getElementById("d").innerHTML = sorteio
+    }
+    </script>
     <footer class="rod">
         <a href="https://www.instagram.com/republica_dos_vagabundos/" target="_blank" ><img src="imagens/instagram.png" alt="instagram"></a>
         <a href="https://www.youtube.com/channel/UCN6zmcZH7yqOSlFBN4CbMvg" target="_blank" ><img src="imagens/youtube.png" alt="youtube"></a>
