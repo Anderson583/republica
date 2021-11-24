@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: lightslategrey;
+}
+
+main{
+    background-color: chartreuse;
+    width: 160px;
+    height: 100px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-shadow: rgba(0, 0, 0, 0.582) 0.1em 0.1em 0.2em;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+button {
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: cornsilk;
+}
+
+p {
+    background-color: rgb(255, 255, 255);
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid rgb(2, 2, 2); 
+    border-radius: 5px;
+    font-size: 1.2em;
+    float: right; 
+    margin-right: 1rem;   
+}
