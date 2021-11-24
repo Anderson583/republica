@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: lightslategrey;
+    background-image: url(../imagens/trevo.png);
 }
 
 main{
@@ -35,4 +35,11 @@ p {
     font-size: 1.2em;
     float: right; 
     margin-right: 1rem;   
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(3, 3, 3);
+    background: rgba(169, 252, 2, 0.822);
+    
 }
