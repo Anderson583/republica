@@ -21,10 +21,13 @@ main{
 button {
     font-size: 1.2em;
     border-radius: 10px;
+    background: rgb(255, 0, 0);
+    color: white;
 }
 
 button:hover {
     background-color: cornsilk;
+    color: tomato;
 }
 
 p {
