@@ -39,7 +39,7 @@ main{
 
 nav{
     font-family: 'Rampart One', Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 1.2em;
     background-color: var(--cor2);
     margin: auto;
     border-style: solid;
