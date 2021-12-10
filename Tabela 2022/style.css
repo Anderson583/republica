@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table{
+    margin: auto;
+  
+    border-collapse: collapse;
+}
+
+td{ 
+    border: 1px solid black;
+    padding: 8px;
+    width: 0%;
+}
+
+tr{
+    background-color: lavender;
+}
+
+.salvar{
+    width: 100px;
+    background-color: white;
+}
+
+input{
+    width: 20px;
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    border: 1px solid springgreen;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.botao{
+    width: 70px;
+    margin-top: 50px;
+    border-radius: 1.8vh;
+}
