@@ -73,8 +73,8 @@ body{
 
 .banner{
     background-image: url(./assents/eu.webp);
-    height: 800px;
     background-size: 100%;
+    height: 700px;
     background-repeat: no-repeat;
     border-bottom: 10px solid black;
     padding-bottom: 38px;
