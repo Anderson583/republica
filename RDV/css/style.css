@@ -69,7 +69,6 @@ footer{
     background-color: #202121;
     padding: 40px;
     text-align: center;
-    border: 2px solid white;
 }
 .picture{
     width: 160px;
@@ -97,6 +96,20 @@ footer{
 
 @media (max-width: 400px){
     .formContainer{
-        text-align: center;
+        float: left;    
+    }
+    .description h3{
+        font-size: 17px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .container{
+        min-width: 400px;
+    }
+    .description p{
+        text-align: justify;
+    }
+    .picture{
+        text-align: right;
     }
 }
