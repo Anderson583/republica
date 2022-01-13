@@ -73,6 +73,7 @@ footer{
 }
 .picture{
     width: 160px;
+    border-radius: 25px;
 }
 
 .description{
@@ -97,7 +98,8 @@ footer{
 
 @media (max-width: 400px){
     .formContainer{
-        float: left;    
+        float: left; 
+        padding: 0 16px;   
     }
     .description h3{
         font-size: 17px;
@@ -111,6 +113,10 @@ footer{
         text-align: justify;
     }
     .picture{
-        text-align: right;
+        width: 280px;
+        border-radius: 25px;
+    }
+    h2{
+        padding-top: 10px;
     }
 }
