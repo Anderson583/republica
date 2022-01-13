@@ -112,7 +112,9 @@ footer{
     .description p{
         text-align: justify;
     }
-    
+    .picture{
+        width: 210px;
+    }
     h2{
         padding-top: 10px;
     }
