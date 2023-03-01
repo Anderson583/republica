@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hora de Brasília</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #080808;
+    }
+    
+    h1 {
+      font-size: 2em;
+      color: #b6a7a7;
+      margin-top: 50px;
+    }
+    
+    #hora {
+      font-size: 13em;
+      color: #3366cc;
+      margin-top: 20px;
+    }
+
+    #visitas {
+      font-size: 1.2em;
+      color: #333;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>A hora atual em Brasília é:</h1>
+  <p id="hora"></p>
+  
+  <div id="visitas">
+     Visitas nesta página: <span id="contador"></span> vezes.
+  </div>
+
+  <script>
+    function atualizarHora() {
+      var data = new Date();
+      var hora = data.getHours();
+      var minutos = data.getMinutes();
+      var segundos = data.getSeconds();
+      
+      hora = hora < 10 ? "0" + hora : hora;
+      minutos = minutos < 10 ? "0" + minutos : minutos;
+      segundos = segundos < 10 ? "0" + segundos : segundos;
+      
+      var horaAtual = hora + ":" + minutos + ":" + segundos;
+      
+      document.getElementById("hora").innerHTML = horaAtual;
+    }
+    
+    setInterval(atualizarHora, 1000);
+    
+    // Contador de visitas
+    var contador = parseInt(getCookie("contador"));
+    if (isNaN(contador)) {
+      contador = 0;
+    }
+    contador++;
+    document.getElementById("contador").innerHTML = contador;
+    setCookie("contador", contador, 365);
+    
+    function setCookie(nome, valor, dias) {
+      var data = new Date();
+      data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + data.toUTCString();
+      document.cookie = nome + "=" + valor + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(nome) {
+      var nomeIgual = nome + "=";
+      var cookies = document.cookie.split(";");
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.indexOf(nomeIgual) == 0) {
+          return cookie.substring(nomeIgual.length, cookie.length);
+        }
+      }
+      return "";
+    }
+  </script>
+</body>
+</html>
+
